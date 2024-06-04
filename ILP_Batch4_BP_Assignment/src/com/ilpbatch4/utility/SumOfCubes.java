@@ -1,0 +1,38 @@
+package com.ilpbatch4.utility;
+
+public class SumOfCubes {
+
+	public static void main(String[] args) {
+		int terms = 5;
+		sumOfSeries(terms);
+	}
+
+	private static void sumOfSeries(int terms) {
+		int sum = 9;
+		int num1 = 1;
+		int num2 = 2;
+		int num3;
+		if(terms == 1) 
+		{
+			System.out.print("Sum of the series = 1");
+		}
+		else
+		{
+			for(int i = 3; i <= terms; i++)
+			{
+				num3 = num1 + num2;
+				sum = sum + cubeOf(num3);
+				num1 = num2;
+				num2 = num3;
+			}
+			System.out.print("Sum of the series: " + sum);
+		}
+		
+	}
+
+	private static int cubeOf(int num3) {
+		int solution = num3 * num3 * num3;
+		return solution;
+	}
+
+}

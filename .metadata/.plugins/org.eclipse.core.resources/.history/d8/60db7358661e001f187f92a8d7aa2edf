@@ -1,0 +1,29 @@
+package com.ilpbatch4.utility;
+
+public class SumOfAlternatingSymbols {
+
+	public static void main(String[] args) {
+		int num = 2;
+		sum(num);
+	}
+
+	private static void sum(int num) {
+		int solution = 0;
+		int check = 1;
+		for(int i = 1; i <= num; i++)
+		{
+			if(i%2 != 0 && check == 1)
+			{
+				solution = solution + i;
+				check = 0;
+			}
+			if(i%2 != 0 && check == 0)
+			{
+				solution = solution - i;
+				check = 1;
+			}
+		}
+		System.out.print("Sum of the series = " + solution);
+	}
+
+}

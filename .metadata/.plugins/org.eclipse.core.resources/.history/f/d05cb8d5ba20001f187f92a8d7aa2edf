@@ -1,0 +1,40 @@
+package com.ilpbatch4.utility;
+
+public class RectNumericPattern {
+
+	public static void main(String[] args) {
+		int num = 4;
+		numPattern(num);
+	}
+
+	private static void numPattern(int num) {
+		int rows = (num*2) - 1;
+		int columns = rows;
+		int spaces = 4;
+		int value = rows;
+		int count = num;
+		for(int i = 1; i <= rows; i++)
+		{
+			if(count > 1) {
+				for(int j = 1; j <= value; j++)
+				{
+					System.out.print(count);
+				}
+				System.out.println("");
+				count--;
+				value = value-2;
+			}
+			else
+			{
+				for(int j = 1; j <= value; j++)
+				{
+					System.out.print(count);
+				}
+				count++;
+				value += 2;
+			}
+		}
+		
+	}
+
+}

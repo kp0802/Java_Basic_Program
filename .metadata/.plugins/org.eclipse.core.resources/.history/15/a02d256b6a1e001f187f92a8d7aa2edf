@@ -1,0 +1,21 @@
+package com.ilpbatch4.utility;
+
+public class SomeAlternatingSum {
+
+	public static void main(String[] args) {
+		int terms = 4;
+		sumOfSeries(terms);
+	}
+
+	private static void sumOfSeries(int terms) {
+		int check = 1;
+		int count = 1;
+		int sum = 0;
+		int num = 0;
+		for(int i = 1; num <= terms; i = i + 2)
+		{
+			if(check == )
+		}
+	}
+
+}
